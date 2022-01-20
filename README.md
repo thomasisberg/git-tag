@@ -13,7 +13,7 @@ Copies shell script to `/usr/local/git-tag.sh` and creates symlink at `/usr/loca
 
 ### Increases patch by default
 
-For example `1.2.3` to `1.2.4`.
+For example `1.2.3` to `1.2.4`
 
 ```bash
 git-tag
@@ -21,7 +21,7 @@ git-tag
 
 ### Increase minor
 
-For example `1.2.3` to `1.3.0`.
+For example `1.2.3` to `1.3.0`
 
 ```bash
 git-tag --minor
@@ -29,7 +29,7 @@ git-tag --minor
 
 ### Increase major
 
-For example `1.2.3` to `2.0.0`.
+For example `1.2.3` to `2.0.0`
 
 ```bash
 git-tag --major
