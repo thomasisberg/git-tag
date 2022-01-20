@@ -11,7 +11,7 @@ Copies shell script to `/usr/local/git-tag.sh` and creates symlink at `/usr/loca
 
 ## Usage
 
-## Increases *Patch number* by default
+## Increases patch by default
 
 For example `1.2.3` to `1.2.4`.
 
