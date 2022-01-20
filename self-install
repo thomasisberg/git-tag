@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo rsync -av ./git-tag.sh /usr/local/
+chmod +x /usr/local/git-tag.sh
+
+if ! [ -L /usr/local/bin/git-tag ]; then
+    sudo ln -s /usr/local/git-tag.sh /usr/local/bin/git-tag
+fi
