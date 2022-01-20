@@ -1,5 +1,7 @@
 # git-tag
-Bash script for automatically creating next git tag.
+Bash script for automatically creating a next version Git tag.
+
+Run `git-tag` to create a new tag with increased version number (major, minor or patch) and push the tag to `origin`.
 
 ## Installation
 
@@ -10,8 +12,6 @@ Copies shell script to `/usr/local/git-tag.sh` and creates symlink at `/usr/loca
 ```
 
 ## Usage
-
-Run `git-tag` to create a new tag with increased version number (major, minor or patch) and push the tag to `origin`.
 
 ### Increases patch by default
 
