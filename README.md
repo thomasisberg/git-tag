@@ -11,7 +11,9 @@ Copies shell script to `/usr/local/git-tag.sh` and creates symlink at `/usr/loca
 
 ## Usage
 
-Increases *Patch number* by default – for example `1.2.3` to `1.2.4`.
+## Increases *Patch number* by default
+
+For example `1.2.3` to `1.2.4`.
 
 ```bash
 git-tag
