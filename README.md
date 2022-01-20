@@ -19,7 +19,7 @@ For example `1.2.3` to `1.2.4`
 git-tag
 ```
 
-Creates tag `v0.0.1` if no tag was found.
+Creates `v0.0.1` if no previous tag was found.
 
 ### Increase minor
 
