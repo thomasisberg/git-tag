@@ -3,6 +3,8 @@ Bash script for automatically creating next git tag.
 
 ## Installation
 
+Copies shell script to `/usr/local/git-tag.sh` and creates symlink at `/usr/local/bin/git-tag`, which should be in your `$PATH`.
+
 ```bash
 ./self-install
 ```
