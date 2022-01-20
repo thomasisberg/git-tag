@@ -41,4 +41,4 @@ git-tag --major
 
 Based on [bash-functions/update.sh](https://github.com/unegma/bash-functions/blob/main/update.sh) by [Unegma](https://unegma.com).
 
-Modified to publish tag to Git repository rather than NPM.
+Modified to publish tags to Git repository rather than NPM.
