@@ -37,6 +37,6 @@ For example `1.2.3` to `2.0.0`
 git-tag --major
 ```
 
-# Credit
+## Credit
 
 Based on [bash-functions/update.sh](https://github.com/unegma/bash-functions/blob/main/update.sh) by [Unegma](https://unegma.com)
