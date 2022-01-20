@@ -18,7 +18,7 @@ CURRENT_TAG=`git describe --abbrev=0 --tags 2>/dev/null`
 
 if [[ $CURRENT_TAG == '' ]]
 then
-  CURRENT_TAG='v1.0.0'
+  CURRENT_TAG='v0.0.0'
 fi
 
 echo "Current Tag: $CURRENT_TAG"
@@ -72,7 +72,6 @@ NEEDS_TAG=`git describe --contains $GIT_COMMIT 2>/dev/null`
 # Only tag if commit doesn't already have one.
 if [ -z "$NEEDS_TAG" ]; then
   echo "Creating tag $NEW_TAG ..."
-  exit
   git tag -a $NEW_TAG -m "Version $NEW_TAG"
   echo "Tag $NEW_TAG created."
   git push origin "$NEW_TAG"
