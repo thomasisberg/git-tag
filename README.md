@@ -5,7 +5,7 @@ Run `git-tag` to create a new tag with increased version number (major, minor or
 
 ## Installation
 
-Copies shell script to `/usr/local/git-tag.sh` and creates symlink at `/usr/local/bin/git-tag`, which should be in your `$PATH`.
+Copies shell script to `/usr/local/git-tag/git-tag.sh` and creates symlink at `/usr/local/bin/git-tag`, which should be in your `$PATH`.
 
 ```bash
 ./self-install
