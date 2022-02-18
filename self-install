@@ -9,6 +9,10 @@ fi
 sudo rsync -av ./git-tag.sh "$INSTALL_PATH/"
 sudo chmod +x "$INSTALL_PATH/git-tag.sh"
 
+if ! [ -d /usr/local/bin ]; then
+    sudo mkdir /usr/local/bin
+fi
+
 if ! [ -L /usr/local/bin/git-tag ]; then
     sudo ln -s "$INSTALL_PATH/git-tag.sh" /usr/local/bin/git-tag
 fi
