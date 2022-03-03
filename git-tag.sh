@@ -48,6 +48,7 @@ if $SELF_UPDATE; then
 fi
 
 
+# Update Git tag.
 do_git_tag
 
 
