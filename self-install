@@ -6,7 +6,7 @@ if [ ! -d "$INSTALL_PATH" ]; then
     sudo mkdir "$INSTALL_PATH"
 fi
 
-sudo rsync -av ./git-tag.sh "$INSTALL_PATH/"
+sudo rsync -aq ./git-tag.sh "$INSTALL_PATH/"
 sudo chmod +x "$INSTALL_PATH/git-tag.sh"
 
 if ! [ -d /usr/local/bin ]; then
