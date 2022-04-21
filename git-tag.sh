@@ -17,17 +17,13 @@
 PWD=$(pwd)
 PWD_DIRNAME=${PWD##*/}
 
+
 # Resolve script folder.
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 if [ -L ${BASH_SOURCE[0]} ]; then
     DIR="$(dirname "$(readlink "$0")")"
 fi
 
-# Verify correct format for current version.
-if [[ ! $CURRENT_TAG =~ ^[vV]?[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-  echo "Current Tag format ($CURRENT_TAG) is not supported. Should be 'v{int}.{int}.{int}' (or without 'v', or with capital 'V')"
-  exit 1
-fi
 
 # Import bash files.
 for f in $DIR/lib/*.sh; do
