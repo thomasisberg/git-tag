@@ -24,8 +24,8 @@ fi
 echo "Current Tag: $CURRENT_TAG"
 
 # Verify correct format for current version.
-if [[ ! $CURRENT_TAG =~ ^[vV]?[0-9]\.[0-9]\.[0-9]$ ]]; then
-  echo "Current Tag format is not supported. Should be 'v{int}.{int}.{int}' (or without 'v', or with capital 'V')"
+if [[ ! $CURRENT_TAG =~ ^[vV]?[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+  echo "Current Tag format ($CURRENT_TAG) is not supported. Should be 'v{int}.{int}.{int}' (or without 'v', or with capital 'V')"
   exit 1
 fi
 
