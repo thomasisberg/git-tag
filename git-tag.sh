@@ -27,6 +27,7 @@ fi
 if [[ ! $CURRENT_TAG =~ ^[vV]?[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   echo "Current Tag format ($CURRENT_TAG) is not supported. Should be 'v{int}.{int}.{int}' (or without 'v', or with capital 'V')"
   exit 1
+fi
 
 # Import bash files.
 for f in $DIR/lib/*.sh; do
